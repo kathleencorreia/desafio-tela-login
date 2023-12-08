@@ -1,0 +1,143 @@
+/*
+Paleta de cores
+verde: #49a09d
+lilás : #5f2c82
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  box-sizing: content-box;
+}
+
+body{
+  background-color: #5f2c82;
+  width: 100vw;
+  height: 100vh;
+ 
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  background-position: left center;
+}
+
+section#login{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  /* o que tiver fora da minha da borda ficará escondido */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);
+  transition: width .3s, heigth .3s ;
+  transition-timing-function: ease;
+}
+
+div#formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+ 
+}
+
+p{
+  font-size: 14px;
+  padding: 10px;
+}
+
+form{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.acesso{
+  display: flex;
+  align-items: center;
+  background-color: #5f2c82;
+  width: 90%;
+  border-radius: 8px;
+}
+  
+input[type=email]{
+  width: 90%;
+  padding: 5px;
+  border-radius: 8px;
+  border: 3px solid #5f2c82;
+  background-color: #4B959A;
+}
+
+#acess::placeholder{
+  color: black;
+}
+
+input[type=password]{
+  width: 90%;
+  padding: 5px;
+  border-radius: 8px;
+  border: 3px solid #5f2c82;
+  background-color: #4B959A;
+
+}
+
+#pass::placeholder{
+  color: black;
+}
+
+input:focus-within{
+  background-color: white;
+}
+
+.envio{
+  width: 100%;
+}
+
+span{
+  color: white;
+  padding: 4px;
+}
+input[type=submit]{
+  width: 85%;
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #49a09d ;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  background-color: #1a5856 ;
+}
+
+input[type=button]{
+  width: 255px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  border: 2px solid #49a09d;
+  background-color: white ;
+}
+
+input[type=button]:hover{
+  background-color: #49a09d;
+  color: white;
+
+}

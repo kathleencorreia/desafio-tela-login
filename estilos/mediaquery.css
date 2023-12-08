@@ -1,0 +1,51 @@
+/* 
+telas pequenas: até 600px
+celular: de 600px até 768px 
+tablet: 768px té 992px
+desktop: 992 até 1200px
+telas grandes: acima de 1200px*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+   body{
+    background-image: linear-gradient(#49a09d, #5f2c82);
+  }
+
+  section#login{
+    width: 80vw;
+    height: 50vh;
+    flex-direction: row;
+    border-radius: 15px;
+  }
+
+  div > img{
+    height: 100vh;
+  }
+} 
+
+@media screen  and (min-width: 992px){
+  body{
+    background-image: linear-gradient(#49a09d, #5f2c82);
+  }
+
+  section#login{
+    width: 90vw;
+    height: 90vh;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  div > img{
+    width: 45vw;
+    height: 100vh;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+  
+  p{
+  font-size: 16px;
+  }
+} 
+
